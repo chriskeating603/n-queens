@@ -123,7 +123,7 @@
       var board = this.rows()
       var result = false;
       for(var i = 0; i < board.length; i++) {
-        result = result || this.hasColConflictAt(board,i)
+        result = result || this.hasColConflictAt(i)
       }
       return result;
     },
