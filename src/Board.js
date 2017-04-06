@@ -191,15 +191,23 @@
         // row index is 0 and col index is arg
         rowIndex = 0;
         colIndex = arg;
+          for (var i = rowIndex; i < arg + 1; i++) {
+            if (board[i][colIndex] !== undefined) {
+              sum += board[i][colIndex];
+            }
+            colIndex--;
+          }
       } else {
         colIndex = board.length - 1;
         rowIndex = arg - (board.length -1);
+        for (var i = rowIndex; i < arg - (arg - board.length); i++) {
+          if (board[i][colIndex] !== undefined) {
+            sum += board[i][colIndex];
+          }
+          colIndex--;
+        }
       }
-      for (var i = rowIndex; i < arg + 1; i++) {
-        console.log(sum, i, colIndex, rowIndex)
-        sum += board[i][colIndex];
-        colIndex--;
-      }
+      
       if (sum > 1) {
         return true
       } else {
