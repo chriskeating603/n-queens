@@ -213,23 +213,6 @@
       } else {
         return false
       }
-
-      // if arg is greater array .legnth - 1
-        // col location is 3 & row loc is arg - array.length - 1
-      // iterate through board with defined vars
-        // increment row
-        // decrement column
-      // return value at all locations
-      // if sum is greater than 1
-        // return false
-      // else 
-        //return true
-
-
-
-
-
-      // return false; // fixme
     },
 
     // test if any minor diagonals on this board contain conflicts
